@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="accX" type="id" />
+    <item name="accYStat" type="id" />
+    <item name="accY" type="id" />
+    <item name="accZStat" type="id" />
+    <item name="accZ" type="id" />
+    <item name="gyroXStat" type="id" />
+    <item name="gyroX" type="id" />
+    <item name="gyroYStat" type="id" />
+    <item name="gyroZStat" type="id" />
+    <item name="gyroY" type="id" />
+    <item name="PitchGyro" type="id" />
+    <item name="PitchGyroStat" type="id" />
+    <item name="gyroZ" type="id" />
+    <item name="PitchFiltStat" type="id" />
+    <item name="PitchAcc" type="id" />
+    <item name="RollGyro" type="id" />
+    <item name="RollGyroStat" type="id" />
+    <item name="RollAccStat" type="id" />
+    <item name="RollFilt" type="id" />
+    <item name="RollFiltStat" type="id" />
+    <item name="RollAcc" type="id" />
+    <item name="PitchFilt" type="id" />
+</resources>

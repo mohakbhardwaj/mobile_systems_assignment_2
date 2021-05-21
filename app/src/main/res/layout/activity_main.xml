@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Press Start to start measuring..." />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentRight="true"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentLeft="true"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/accXStat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:hint="AccX"
+        />
+<!--    Accelerometer Text Views-->
+    <TextView
+        android:id="@+id/accX"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/accYStat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:hint="AccY"/>
+
+    <TextView
+        android:id="@+id/accY"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/accZStat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:hint="AccZ"/>
+    <TextView
+        android:id="@+id/accZ"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"/>
+    <!--Gyroscope text views-->
+    <TextView
+        android:id="@+id/gyroXStat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+        android:visibility="visible"
+        android:hint="GyroX"
+        />
+    <TextView
+        android:id="@+id/gyroX"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/gyroYStat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="90dp"
+        android:visibility="visible"
+        android:hint="GyroY"/>
+
+    <TextView
+        android:id="@+id/gyroY"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnStart"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/gyroZStat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:visibility="visible"
+        android:hint="GyroZ"/>
+
+    <TextView
+        android:id="@+id/gyroZ"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/PitchGyroStat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"
+        android:hint="Pitch (Gyro)"
+        />
+    <TextView
+        android:id="@+id/PitchGyro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="185dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/PitchAccStat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"
+        android:hint="Pitch (Acc)"
+        />
+    <TextView
+        android:id="@+id/PitchAcc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/PitchFiltStat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"
+        android:text="Pitch (Filter)"
+        android:textColor="#C31313"
+        />
+    <TextView
+        android:id="@+id/PitchFilt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="185dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+
+    <TextView
+        android:id="@+id/RollGyroStat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="230dp"
+        android:visibility="visible"
+        android:hint="Roll (Gyro)"
+        />
+    <TextView
+        android:id="@+id/RollGyro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="255dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/RollAccStat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:visibility="visible"
+        android:hint="Roll (Acc)"
+        />
+    <TextView
+        android:id="@+id/RollAcc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/RollFiltStat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="230dp"
+        android:text="Roll (Filter)"
+        android:textColor="#C31313"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/RollFilt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="255dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/back"
+        />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphPitch"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/RollFilt"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphRoll"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/graphPitch"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
